@@ -69,11 +69,8 @@ const form = document.getElementById("task-form");
 const taskInput = document.getElementById("task-input");
 
 const taskService = new TaskService();
-console.log("🚀 | taskService:", taskService);
 new TaskCountComponent(taskService);
-console.log("🚀 | taskService:", taskService);
 new TaskListComponent(taskService);
-console.log("🚀 | taskService:", taskService);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
